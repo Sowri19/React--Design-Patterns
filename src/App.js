@@ -1,18 +1,18 @@
 import { SplitScreen } from "./SplitScreen";
 
-const LeftHandComponent = () => {
-  return <h1 style={{ backgroundColor: "green" }}>Left!</h1>;
+const LeftHandComponent = ({ name }) => {
+  return <h1 style={{ backgroundColor: "green" }}>{name}</h1>;
 };
-const RightHandComponent = () => {
-  return <h1 style={{ backgroundColor: "yellow" }}>Right!</h1>;
+const RightHandComponent = ({ message }) => {
+  return <h1 style={{ backgroundColor: "yellow" }}>{message}</h1>;
 };
 // the leftHandComponent and RightHandComponent are the children of the SplitScreen component instead
 // of props to the components
 function App() {
   return (
     <SplitScreen leftWeight={1} rightWeight={3}>
-      <LeftHandComponent />
-      <RightHandComponent />
+      <LeftHandComponent name="sowri" />
+      <RightHandComponent message="this is awesome" />
     </SplitScreen>
   );
 }

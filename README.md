@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Part 1. Layout Components
+
+## The Layout Components are the divided into 3 types: 
+### Split Screen components
+### Lists and Items
+### Modals- Content that gets displayed on the top of the webpage
+
+
+
+
+
+
