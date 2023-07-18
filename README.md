@@ -69,12 +69,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Part 1. Layout Components
-
+# Part 1. Layout Components
 ## The Layout Components are the divided into 3 types: 
 ### Split Screen components
 ### Lists and Items
 ### Modals- Content that gets displayed on the top of the webpage
+
+### Lists and list items
+
+### Modal components
+# Part 2. Container Components
+
+## Server Instructions
+## CurrentUser Loader component
+ ## UserLoader component
+ ## ResourceLoader component
+  ## DataSource component
+
+  ## Loading data from localStorage
+
+# Part 3. Controlled and Uncontrolled Components
+
+
+
 
 
 
