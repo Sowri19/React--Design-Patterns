@@ -7,6 +7,7 @@ export const RegularList = ({
     <>
       {items.map((item, i) => (
         <ItemComponent key={i} {...{ [resourceName]: item }} />
+        // <ItemComponent key={i} person ={item} /> this is going to change in this way.
       ))}
     </>
   );
