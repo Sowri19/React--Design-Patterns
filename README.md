@@ -79,7 +79,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Modal components
 # Part 2. Container Components
-
+// In order to make our frontend and backend communicate with each other, we need to add proxy in the package.json file
 ## Server Instructions
 ## CurrentUser Loader component
  ## UserLoader component

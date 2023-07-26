@@ -1,7 +1,9 @@
 export const UserInfo = ({ user }) => {
-  const { name, age, hairColor, hobbies } = user;
+  const { name, age, hairColor, hobbies } = user || {};
 
-  return (
+  // here we are giving a default value before the destructuring user, and adding a conditional to the return statement
+
+  return user ? (
     <>
       <h3>{name}</h3>
       <p>Age: {age} years</p>
@@ -13,5 +15,7 @@ export const UserInfo = ({ user }) => {
         ))}
       </ul>
     </>
+  ) : (
+    <p>Loading...</p>
   );
 };
