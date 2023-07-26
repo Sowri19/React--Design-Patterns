@@ -1,17 +1,24 @@
+import axios from "axios";
 import { CurrentUserLoader } from "./CurrentUserLoader";
-import { UserInfo } from "./UserInfo";
 import { UserLoader } from "./UserLoader";
-import { ProductInfo } from "./ProductInfo";
+import { DataSource } from "./DataSource";
 import { ResourceLoader } from "./ResourceLoader";
+import { ProductInfo } from "./ProductInfo";
+import { UserInfo } from "./UserInfo";
+
+// this function just pulls the data from the server
+
+const getServerData = (url) => async () => {
+  const response = await axios.get(url);
+  return response.data;
+};
+//  the getServerData function is a higher-order function that returns a function that can be used as the getDataFunc prop in the DataSource component.
 function App() {
   return (
     <>
-      <ResourceLoader resourceUrl="/users/123" resourceName="user">
+      <DataSource getDataFunc={getServerData("/users/123")} resourceName="user">
         <UserInfo />
-      </ResourceLoader>
-      <ResourceLoader resourceUrl="/products/1234" resourceName="product">
-        <ProductInfo />
-      </ResourceLoader>
+      </DataSource>
     </>
   );
 }
