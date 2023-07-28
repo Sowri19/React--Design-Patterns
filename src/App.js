@@ -1,7 +1,7 @@
+import { Uncontrolled } from "./Uncontrolled";
+
 function App() {
-	return (
-		<h1>Your code goes here</h1>
-	);
+  return <Uncontrolled />;
 }
 
 export default App;
