@@ -92,7 +92,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   ## Loading data from localStorage
 
 # Part 3. Controlled and Uncontrolled Components
-
+<!-- All the controlled components have the states outside the children components, so that we can have control over the data that is being passed to the children components, on the basis of specific conditions. -->
 
 
 
