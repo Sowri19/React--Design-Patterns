@@ -1,5 +1,4 @@
 import { useResource } from "./useResource";
-import { useUser } from "./useUser";
 
 export const UserInfo = ({ userId }) => {
   const user = useResource(`/users/${userId}`);
